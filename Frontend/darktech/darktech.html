@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Tech Research & Design</title>
+  <style>
+    :root {
+      color-scheme: dark;
+    }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #050405;
+      color: #f5f0ff;
+    }
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 3rem;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 0 2rem;
+    }
+    .logo {
+      font-size: 1.35rem;
+      letter-spacing: 0.18rem;
+      text-transform: uppercase;
+      color: #ff66cb;
+    }
+     .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 20px;
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 999px;
+      color: var(--text);
+      text-decoration: none;
+      background: rgba(255, 62, 178, 0.08);
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .back-link:hover {
+      transform: translateY(-2px);
+      background: rgba(255, 62, 178, 0.16);
+    }
+    .hero {
+      padding: 3rem 0 2.5rem;
+      border-bottom: 1px solid rgba(255, 102, 203, 0.18);
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 0.9rem;
+      border-radius: 999px;
+      background: rgba(255, 102, 203, 0.15);
+      color: #ff9ed6;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.78rem;
+      margin-bottom: 1.5rem;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(2.5rem, 4vw, 3.8rem);
+      line-height: 1.02;
+      letter-spacing: -0.04em;
+    }
+    p.lead {
+      margin: 1.25rem 0 0;
+      max-width: 770px;
+      color: #d3b9e4;
+      font-size: 1.05rem;
+      line-height: 1.75;
+    }
+    .section {
+      padding: 3rem 0;
+    }
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.75rem;
+    }
+    .section-title .line {
+      flex: 1;
+      height: 1px;
+      background: rgba(255, 102, 203, 0.2);
+    }
+    .section-title h2 {
+      margin: 0;
+      color: #ff8ad4;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      font-size: 0.92rem;
+    }
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .cards {
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+    .card {
+      background: #0f0b12;
+      border: 1px solid rgba(255, 102, 203, 0.12);
+      border-radius: 1.1rem;
+      padding: 1.7rem;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: #ff66cb;
+    }
+    .card h3 {
+      margin: 0 0 0.8rem;
+      font-size: 1.25rem;
+      color: #fff;
+    }
+    .card p {
+      margin: 0;
+      color: #cab9d8;
+      line-height: 1.75;
+      font-size: 0.98rem;
+    }
+    .thumbs{
+            display:grid;
+            grid-template-columns:repeat(2,1fr);
+            gap:8px;margin-top:10px}
+	    .thumbs img{
+        width:100%;
+        height:auto;
+        object-fit:contain;
+        }
+		
+		@media(max-width:900px){.grid{grid-template-columns:1fr}aside{order:-1}}
+    .footer {
+      padding-top: 2rem;
+      color: #8f7aa6;
+      font-size: 0.95rem;
+      text-align: center;
+      border-top: 1px solid rgba(255, 102, 203, 0.12);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">Dark Tech</div>
+      <a class="back-link" href="../index.html">← Back to home</a>
+    </header>
+
+    <section class="hero">
+      <div class="badge">Minor Portfolio</div>
+      <h1>Research and design work from my Dark Tech minor.</h1>
+      <p class="lead">A collection of conceptual studies, design systems, and creative research grounded in a black and pink visual language. This page highlights narrative thinking, interface exploration, and dark-tech aesthetics developed during the minor.</p>
+    </section>
+
+    <section id="research" class="section">
+      <div class="items">
+		<div class="item">
+							<h3>Research paper: Function creep</h3>
+							<p>Comprehensive research exploring how features extend beyond their original purpose and the societal risks involved.</p>
+							<iframe 
+                            src="../assets/Onderzoek function creep.pdf" 
+                            width="100%" 
+                            height="600px"
+                            style="border:0; border-radius:8px; margin-top:10px;">
+                            </iframe>
+						</div>
+                        <div class="item">
+							<h3>Advice report for product owner</h3>
+							<p>Actionable recommendations to mitigate risks identified in the research and guide product decisions.</p>
+							<iframe 
+                            src="../assets/Advies Function creep.pdf" 
+                            width="100%" 
+                            height="600px"
+                            style="border:0; border-radius:8px; margin-top:10px;">
+                            </iframe>
+						</div>
+    </section>
+
+    <section id="design" class="section">
+      <div class="item">
+							<h3>Designs</h3>
+							<p>Concept screens and interaction sketches created to support the recommendations.</p>
+							<div class="thumbs">
+								<img src="../assets/MedfiMaaikeDesign.png" alt="Med-fi design">
+								<img src="../assets/LogoLinder.png" alt="Logo design">
+                                <img src="../assets/LofiMaaikeDesign.png" alt="Lo-fi design">
+							</div>
+						</div>
+    </section>
+
+    <footer class="footer">
+      Dark Tech minor portfolio · research, interfaces, and design explorations in a black & pink system.
+    </footer>
+  </div>
+</body>
+</html>
