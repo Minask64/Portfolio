@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Portfolio</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #050505;
+      --surface: #111111;
+      --text: #f8f4f9;
+      --accent: #ff69b4;
+      --accent-soft: #ff8fc9;
+      --border: rgba(255, 105, 180, 0.2);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at top left, rgba(255, 105, 180, 0.12), transparent 35%),
+                  radial-gradient(circle at bottom right, rgba(255, 105, 180, 0.08), transparent 30%),
+                  var(--bg);
+      color: var(--text);
+      font-family: Inter, system-ui, sans-serif;
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 20px;
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 999px;
+      color: var(--text);
+      text-decoration: none;
+      background: rgba(255, 62, 178, 0.08);
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .back-link:hover {
+      transform: translateY(-2px);
+      background: rgba(255, 62, 178, 0.16);
+    }
+    header {
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      font-size: clamp(2.4rem, 3vw, 4rem);
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+    }
+
+    header p {
+      max-width: 720px;
+      color: #d8c8d9;
+      font-size: 1.05rem;
+    }
+
+    .section-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border);
+      border-radius: 1.25rem;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 24px 50px rgba(0, 0, 0, 0.18);
+    }
+
+    .section-card h2 {
+      color: var(--accent);
+      font-size: 1.6rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .section-card p {
+      margin-bottom: 1rem;
+      color: #d0c3d3;
+    }
+
+    .btn-pdf {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.95rem 1.6rem;
+      border-radius: 999px;
+      background: linear-gradient(135deg, rgba(255, 105, 180, 0.95), rgba(255, 143, 201, 0.95));
+      color: #050505;
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 14px 30px rgba(255, 105, 180, 0.22);
+    }
+
+    .btn-pdf:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 40px rgba(255, 105, 180, 0.3);
+    }
+
+    .note {
+      color: #b9a2ba;
+      font-size: 0.95rem;
+      margin-top: 0.25rem;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      color: #8f8194;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        padding: 1.5rem 1rem;
+      }
+
+      header h1 {
+        font-size: 2.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>Mijn CV</h1>
+      <p>Een strakke zwarte en roze stijl voor mijn curriculum vitae. Bekijk of download mijn pdf-cv hieronder.</p>
+      <a class="back-link" href="../Frontend/index.html">← Back to home</a>
+    </header>
+
+    <section class="section-card">
+      <h2>CV PDF</h2>
+      <p>Hier vind je mijn meest recente CV in pdf-formaat. Klik op de knop om het document te openen of te downloaden.</p>
+            <div>
+				<iframe 
+                    src="../Frontend/assets/Cv 2026.pdf" 
+                    width="100%" 
+                    height="600px"
+                    style="border:0; border-radius:8px; margin-top:10px;">
+                </iframe>
+				</div>
+    </section>
+    <footer>
+      <p>Portfolio | CV sectie</p>
+    </footer>
+  </main>
+</body>
+</html>
