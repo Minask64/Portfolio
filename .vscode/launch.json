@@ -7,8 +7,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open index.html",
-            "file": "/Users/maaikeadam/Portfolio-1/Frontend/index.html"
+            "name": "Open Indextwee.html",
+            "file": "/Users/maaikeadam/Portfolio-1/Frontend/Indextwee.html"
         }
     ]
 }
