@@ -130,17 +130,14 @@
       line-height: 1.75;
       font-size: 0.98rem;
     }
-    .thumbs{
-            display:grid;
-            grid-template-columns:repeat(2,1fr);
-            gap:8px;margin-top:10px}
-	    .thumbs img{
-        width:100%;
-        height:auto;
-        object-fit:contain;
-        }
-		
-		@media(max-width:900px){.grid{grid-template-columns:1fr}aside{order:-1}}
+   .thumbs img{
+    width:100%;
+    height:320px;
+    object-fit:contain;
+    background:#0f0b12;
+    border-radius:12px;
+    padding:10px;
+}
     .footer {
       padding-top: 2rem;
       color: #8f7aa6;
@@ -160,26 +157,49 @@
     <section class="hero">
       <div class="badge">Minor Portfolio</div>
       <h1>Research and design work from my Dark Tech minor.</h1>
-      <p class="lead">A collection of conceptual studies, design systems, and creative research grounded in a black and pink visual language. This page highlights narrative thinking, interface exploration, and dark-tech aesthetics developed during the minor.</p>
+      <p class="lead">My contributions to my team's research and design efforts as a creative technologist. </p>
     </section>
 
     <section id="research" class="section">
       <div class="items">
 		<div class="item">
+            <div class="card" style="margin-bottom: 2rem;">
+                        <h3>About the Application</h3>
+                        <p>
+                            During my Dark Tech minor, my team and I developed a prototype application focused on
+                            exploring the ethical and social impact of digital technologies. The project
+                            investigates how systems can evolve beyond their intended purpose — a phenomenon
+                            known as <strong>function creep</strong>.
+                        </p>
+
+                        <p>
+                            The application was designed to visualize privacy risks, user manipulation,
+                            and data transparency issues in modern platforms. Through research, interface
+                            design, and speculative interaction concepts, we explored how technology can
+                            influence user behavior and decision-making over time.
+                        </p>
+
+                        <p>
+                            My contribution focused on research, interface design, visual identity,
+                            and translating ethical concerns into accessible user experiences. The
+                            project combines dark-tech aspects with critical design principles to
+                            encourage reflection on the future of digital products.
+                        </p>
+                        </div>
 							<h3>Research paper: Function creep</h3>
-							<p>Comprehensive research exploring how features extend beyond their original purpose and the societal risks involved.</p>
+							<p>Research exploring how features extend beyond their original purpose and the societal risks involved.</p>
 							<iframe 
                             src="../assets/Onderzoek function creep.pdf" 
                             width="100%" 
                             height="600px"
                             style="border:0; border-radius:8px; margin-top:10px;">
                             </iframe>
-						</div>
+			</div>
                         <div class="item">
 							<h3>Advice report for product owner</h3>
-							<p>Actionable recommendations to mitigate risks identified in the research and guide product decisions.</p>
+							<p>Advice report outlining key findings and recommendations for mitigating risks associated with function creep.</p>
 							<iframe 
-                            src="../assets/Advies Function creep.pdf" 
+                            src="../assets/Advies Function creep (1).pdf" 
                             width="100%" 
                             height="600px"
                             style="border:0; border-radius:8px; margin-top:10px;">
@@ -198,6 +218,18 @@
 							</div>
 						</div>
     </section>
+
+    <section id="Pop-Ups" class="section">
+      <div class="item">
+                            <h3>Pop-ups I made for the application</h3>
+                            <p>Here are the pop-ups and Terms of Service I created for the application to showcase function creep for the passice and active users.</p>
+                            <div class="thumbs">
+                                <img src="../assets/Termsofserviceregister.png" alt="Terms of Service pop-up">
+                                <img src="../assets/Termsofservicepage.png" alt="Terms of Service page">
+                                <img src="../assets/Termsofserviceandswipepopup.png" alt="Terms of service pop-up for passive users">
+                                <img src="../assets/Profiletagpopup.png" alt="Profile tag pop-up">
+                            </div>
+                        </div>
 
     <footer class="footer">
       Dark Tech minor portfolio · research, interfaces, and design explorations in a black & pink system.
