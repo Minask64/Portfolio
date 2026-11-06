@@ -1,239 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dark Tech Research & Design</title>
-  <style>
-    :root {
-      color-scheme: dark;
-    }
-    body {
-      margin: 0;
-      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #050405;
-      color: #f5f0ff;
-    }
-    .container {
-      max-width: 1080px;
-      margin: 0 auto;
-      padding: 2rem 1.5rem 3rem;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 1rem;
-      padding: 1rem 0 2rem;
-    }
-    .logo {
-      font-size: 1.35rem;
-      letter-spacing: 0.18rem;
-      text-transform: uppercase;
-      color: #ff66cb;
-    }
-     .back-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 12px 20px;
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 999px;
-      color: var(--text);
-      text-decoration: none;
-      background: rgba(255, 62, 178, 0.08);
-      transition: transform 0.2s ease, background 0.2s ease;
-    }
-
-    .back-link:hover {
-      transform: translateY(-2px);
-      background: rgba(255, 62, 178, 0.16);
-    }
-    .hero {
-      padding: 3rem 0 2.5rem;
-      border-bottom: 1px solid rgba(255, 102, 203, 0.18);
-    }
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.5rem 0.9rem;
-      border-radius: 999px;
-      background: rgba(255, 102, 203, 0.15);
-      color: #ff9ed6;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      font-size: 0.78rem;
-      margin-bottom: 1.5rem;
-    }
-    h1 {
-      margin: 0;
-      font-size: clamp(2.5rem, 4vw, 3.8rem);
-      line-height: 1.02;
-      letter-spacing: -0.04em;
-    }
-    p.lead {
-      margin: 1.25rem 0 0;
-      max-width: 770px;
-      color: #d3b9e4;
-      font-size: 1.05rem;
-      line-height: 1.75;
-    }
-    .section {
-      padding: 3rem 0;
-    }
-    .section-title {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 1.75rem;
-    }
-    .section-title .line {
-      flex: 1;
-      height: 1px;
-      background: rgba(255, 102, 203, 0.2);
-    }
-    .section-title h2 {
-      margin: 0;
-      color: #ff8ad4;
-      text-transform: uppercase;
-      letter-spacing: 0.22em;
-      font-size: 0.92rem;
-    }
-    .grid {
-      display: grid;
-      gap: 1.5rem;
-    }
-    .cards {
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    }
-    .card {
-      background: #0f0b12;
-      border: 1px solid rgba(255, 102, 203, 0.12);
-      border-radius: 1.1rem;
-      padding: 1.7rem;
-      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
-      transition: transform 0.2s ease, border-color 0.2s ease;
-    }
-    .card:hover {
-      transform: translateY(-8px);
-      border-color: #ff66cb;
-    }
-    .card h3 {
-      margin: 0 0 0.8rem;
-      font-size: 1.25rem;
-      color: #fff;
-    }
-    .card p {
-      margin: 0;
-      color: #cab9d8;
-      line-height: 1.75;
-      font-size: 0.98rem;
-    }
-   .thumbs img{
-    width:100%;
-    height:320px;
-    object-fit:contain;
-    background:#0f0b12;
-    border-radius:12px;
-    padding:10px;
-}
-    .footer {
-      padding-top: 2rem;
-      color: #8f7aa6;
-      font-size: 0.95rem;
-      text-align: center;
-      border-top: 1px solid rgba(255, 102, 203, 0.12);
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dark Tech Research & Design | Maaike Adam</title>
+<link rel="stylesheet" href="../style.css">
 </head>
-<body>
-  <div class="container">
-    <header>
-      <div class="logo">Dark Tech</div>
-      <a class="back-link" href="../index.html">← Back to home</a>
-    </header>
-
-    <section class="hero">
-      <div class="badge">Minor Portfolio</div>
-      <h1>Research and design work from my Dark Tech minor.</h1>
-      <p class="lead">My contributions to my team's research and design efforts as a creative technologist. </p>
-    </section>
-
-    <section id="research" class="section">
-      <div class="items">
-		<div class="item">
-            <div class="card" style="margin-bottom: 2rem;">
-                        <h3>About the Application</h3>
-                        <p>
-                            During my Dark Tech minor, my team and I developed a prototype application focused on
-                            exploring the ethical and social impact of digital technologies. The project
-                            investigates how systems can evolve beyond their intended purpose — a phenomenon
-                            known as <strong>function creep</strong>.
-                        </p>
-
-                        <p>
-                            The application was designed to visualize privacy risks, user manipulation,
-                            and data transparency issues in modern platforms. Through research, interface
-                            design, and speculative interaction concepts, we explored how technology can
-                            influence user behavior and decision-making over time.
-                        </p>
-
-                        <p>
-                            My contribution focused on research, interface design, visual identity,
-                            and translating ethical concerns into accessible user experiences. The
-                            project combines dark-tech aspects with critical design principles to
-                            encourage reflection on the future of digital products.
-                        </p>
-                        </div>
-							<h3>Research paper: Function creep</h3>
-							<p>Research exploring how features extend beyond their original purpose and the societal risks involved.</p>
-							<iframe 
-                            src="../assets/Onderzoek function creep.pdf" 
-                            width="100%" 
-                            height="600px"
-                            style="border:0; border-radius:8px; margin-top:10px;">
-                            </iframe>
-			</div>
-                        <div class="item">
-							<h3>Advice report for product owner</h3>
-							<p>Advice report outlining key findings and recommendations for mitigating risks associated with function creep.</p>
-							<iframe 
-                            src="../assets/Advies Function creep (1).pdf" 
-                            width="100%" 
-                            height="600px"
-                            style="border:0; border-radius:8px; margin-top:10px;">
-                            </iframe>
-						</div>
-    </section>
-
-    <section id="design" class="section">
-      <div class="item">
-							<h3>Designs</h3>
-							<p>Concept screens and interaction sketches created to support the recommendations.</p>
-							<div class="thumbs">
-								<img src="../assets/MedfiMaaikeDesign.png" alt="Med-fi design">
-								<img src="../assets/LogoLinder.png" alt="Logo design">
-                                <img src="../assets/LofiMaaikeDesign.png" alt="Lo-fi design">
-							</div>
-						</div>
-    </section>
-
-    <section id="Pop-Ups" class="section">
-      <div class="item">
-                            <h3>Pop-ups I made for the application</h3>
-                            <p>Here are the pop-ups and Terms of Service I created for the application to showcase function creep for the passice and active users.</p>
-                            <div class="thumbs">
-                                <img src="../assets/Termsofserviceregister.png" alt="Terms of Service pop-up">
-                                <img src="../assets/Termsofservicepage.png" alt="Terms of Service page">
-                                <img src="../assets/Termsofserviceandswipepopup.png" alt="Terms of service pop-up for passive users">
-                                <img src="../assets/Profiletagpopup.png" alt="Profile tag pop-up">
-                            </div>
-                        </div>
-
-    <footer class="footer">
-      Dark Tech minor portfolio · research, interfaces, and design explorations in a black & pink system.
-    </footer>
+<body class="dark">
+<header class="site-header">
+  <a class="logo" href="../index.html"><span aria-hidden="true">🍒</span> Maaike Adam</a>
+  <nav aria-label="Main">
+    <a href="../about.html">About</a>
+    <a href="../projects/project.html">Projects</a>
+    <a href="darktech.html" aria-current="page">DarkTech</a>
+    <a href="../cv.html">CV</a>
+    <a href="../learningplan.html">Learning Plan</a>
+    <a href="../index.html#contact">Contact</a>
+  </nav>
+</header>
+<main class="wrap">
+  <div class="pagehead">
+    <a class="bubble" style="display:inline-block;margin-bottom:1.2rem" href="../darktech/darktech.html">Minor portfolio</a>
+    <a class="bubble" style="display:inline-block;margin-bottom:1.2rem" href="../darktech/devlog.html">Devlog</a>
+    <h1>Research and design work from my Dark Tech minor</h1>
+    <p class="lead">My contributions to my team's research and design efforts as a creative technologist.</p>
   </div>
+
+  <section id="research">
+    <div class="card tint">
+      <h2>About the Application</h2>
+      <p>During my Dark Tech minor, my team and I developed a prototype application focused on exploring the ethical and social impact of digital technologies. The project investigates how systems can evolve beyond their intended purpose, a phenomenon known as <strong>function creep</strong>.</p>
+      <p>The application was designed to visualize privacy risks, user manipulation, and data transparency issues in modern platforms. Through research, interface design, and speculative interaction concepts, we explored how technology can influence user behavior and decision-making over time.</p>
+      <p>My contribution focused on research, interface design, visual identity, and translating ethical concerns into accessible user experiences. The project combines dark-tech aspects with critical design principles to encourage reflection on the future of digital products.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Research paper: Function creep</h2>
+    <p class="sub">Research exploring how features extend beyond their original purpose and the societal risks involved.</p>
+    <iframe class="pdf" src="../assets/Onderzoek function creep.pdf" title="Research paper: Function creep"></iframe>
+  </section>
+
+  <section>
+    <h2>Advice report for product owner</h2>
+    <p class="sub">Key findings and recommendations for mitigating risks associated with function creep.</p>
+    <iframe class="pdf" src="../assets/Advies Function creep (1).pdf" title="Advice report on function creep"></iframe>
+  </section>
+
+  <section id="design">
+    <h2>Designs</h2>
+    <p class="sub">Concept screens and interaction sketches created to support the recommendations.</p>
+    <div class="thumbs">
+      <img src="../assets/MedfiMaaikeDesign.png" alt="Med-fi design">
+      <img src="../assets/LogoLinder.png" alt="Logo design">
+      <img src="../assets/LofiMaaikeDesign.png" alt="Lo-fi design">
+    </div>
+  </section>
+
+  <section id="pop-ups">
+    <h2>Pop-ups I made for the application</h2>
+    <p class="sub">The pop-ups and Terms of Service I created to showcase function creep for passive and active users.</p>
+    <div class="thumbs">
+      <img src="../assets/Termsofserviceregister.png" alt="Terms of Service pop-up">
+      <img src="../assets/Termsofservicepage.png" alt="Terms of Service page">
+      <img src="../assets/Termsofserviceandswipepopup.png" alt="Terms of service pop-up for passive users">
+      <img src="../assets/Profiletagpopup.png" alt="Profile tag pop-up">
+    </div>
+  </section>
+</main>
+<footer>Dark Tech minor portfolio: research, interfaces, and design explorations in black and cherry.</footer>
 </body>
 </html>
